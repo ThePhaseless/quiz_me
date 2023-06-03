@@ -1,23 +1,24 @@
 import 'package:flutter/material.dart';
 
-class MainScreen extends StatelessWidget {
-  MainScreen(this.onPress, {Key? key}) : super(key: key);
+class WelcomeScreen extends StatelessWidget {
+  const WelcomeScreen(this.onPress, {Key? key}) : super(key: key);
 
-  Function onPress;
+  final VoidCallback onPress;
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
+      mainAxisSize: MainAxisSize.min,
       children: [
-        Text(
+        const Text(
           "Let's Quiz",
           style: TextStyle(
             fontSize: 40,
           ),
         ),
         ElevatedButton(
-          child: Text("Start"),
           onPressed: onPress,
+          child: const Text("Start"),
         ),
       ],
     );

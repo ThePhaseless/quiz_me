@@ -1,0 +1,15 @@
+{
+    // Użyj funkcji IntelliSense, aby uzyskać informacje o możliwych atrybutach.
+    // Najedź kursorem, aby wyświetlić opisy istniejących atrybutów.
+    // Aby uzyskać więcej informacji, odwiedź stronę: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Flutter run",
+            "type": "dart",
+            "request": "launch",
+            "program": "lib/main.dart",
+            "args": ["-d web-server --web-hostname 0.0.0.0 --web-port 3000"]
+        }
+    ]
+}
